@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Dompston Plugs In</title>
+        <meta charset="UTF-8" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+            html {
+                width: 450px;
+                height: 150px;
+                background-color: #000;
+            }
+            body {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            h1 {
+                width: 100%;
+                text-align: center;
+            }
+            .text-standard {
+                color: rgb(220, 216, 216);
+            }
+            label {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                gap: 10px;
+                font-size: 1.2rem;
+                color: rgb(220, 216, 216);
+            }
+            #status {
+                margin-left: 15px;
+                font-weight: bold;
+                font-family: monospace;
+                user-select: none;
+                color: rgb(220, 216, 216);
+            }
+        </style>
+    </head>
+    <body class="bg-dark text-light w-full h-full grid pt-10">
+        <h1
+            class="text-2xl font-monospace flex justify-center items-center w-full mt-10 text-standard"
+        >
+            Dompsotn Plugs In
+        </h1>
+
+        <!-- Horn Toggle -->
+        <label>
+            <input type="checkbox" id="clickHornToggle" />
+            <span id="status">CLOWN MODE OFF</span>
+        </label>
+
+        <!-- <div class="w-full">
+            <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/album/3n4FA4zHvtVxfTx3UvSXWW?utm_source=generator"
+                width="100%"
+                height="352"
+                frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+            ></iframe>
+        </div> -->
+
+    </body>
+    <script src="scripts/music.js"></script>
+    <script src="popup.js"></script>
+</html>
